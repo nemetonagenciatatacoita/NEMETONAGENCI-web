@@ -1,0 +1,263 @@
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+/* HERO PRINCIPAL */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding: 120px;20px 60px;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("img/portada.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:52px;
+    font-weight:bold;
+}
+
+h3{
+    margin-top:10px;
+    font-size:24px;
+    font-weight:500;
+}
+
+p{
+    max-width:650px;
+    font-size:18px;
+    opacity:0.9;
+}
+
+/* BOTÓN WHATSAPP */
+.btn-success{
+    margin-top:15px;
+    padding:12px 25px;
+    font-size:18px;
+    border-radius:30px;
+}
+
+/* DESTINOS */
+.destinos{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.destinos h2{
+    font-size:36px;
+    margin-bottom:30px;
+    color:#222;
+}
+
+.destinos img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:transform .3s ease;
+}
+
+.destinos img:hover{
+    transform:scale(1.05);
+}
+
+.destinos h4{
+    margin-top:10px;
+    font-size:18px;
+}.galeria img{
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.galeria img:hover{
+    transform:scale(1.05);
+}.card{
+    border:none;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}/* ===== MENÚ ===== */
+
+.navbar{
+    background: rgba(0,0,0,.65);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:20px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#f7c873 !important;
+}
+.slogan{
+    font-size:22px;
+    font-style:italic;
+    color:#FFD66B;
+    margin-top:30px;
+}.navbar-brand img{
+    border-radius:50%;
+}
+
+.navbar-brand small{
+    color:#9dd17b;
+    font-size:12px;
+    letter-spacing:1px;
+}/* ===== LOGO DEL MENÚ ===== */
+
+.logo-menu{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.navbar-brand h5{
+    color:white;
+    font-size:22px;
+    margin:0;
+    font-weight:700;
+}
+
+.navbar-brand small{
+    color:#9fd37c;
+    letter-spacing:1px;
+    font-size:11px;
+}.nav-link{
+    position:relative;
+}
+
+.nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-4px;
+    width:0;
+    height:2px;
+    background:#9fd37c;
+    transition:.3s;
+}
+
+.nav-link:hover::after{
+    width:100%;
+}/* ===== EXPERIENCIAS ===== */
+
+#experiencias{
+    padding-top:80px;
+}
+
+#experiencias h2{
+    font-weight:700;
+}
+
+.experiencia-img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+    transition:.4s;
+}
+
+.experiencia-img:hover{
+    transform:scale(1.03);
+}
+
+#experiencias ul{
+    padding-left:20px;
+}
+
+#experiencias li{
+    margin-bottom:8px;
+}.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}html {
+    scroll-behavior: smooth;
+}section {
+    scroll-margin-top: 90px;
+}.nav-link {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #00ff88 !important;
+}html {
+    scroll-behavior: smooth;
+}
+
+/* evita que el navbar tape las secciones */
+section {
+    scroll-margin-top: 90px;
+}
+
+/* estilo del menú */
+.navbar {
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(8px);
+}
+
+/* hover bonito */
+.nav-link {
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #00ff88 !important;
+}
+
+/* link activo */
+.nav-link.active {
+    color: #00ff88 !important;
+    font-weight: bold;
+}.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
