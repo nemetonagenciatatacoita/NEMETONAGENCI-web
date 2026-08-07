@@ -1,3 +1,4 @@
+// Resaltar sección activa en el menú al hacer scroll
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
 
@@ -6,7 +7,6 @@ window.addEventListener("scroll", () => {
 
     sections.forEach(section => {
         const sectionTop = section.offsetTop - 120;
-        const sectionHeight = section.clientHeight;
 
         if (pageYOffset >= sectionTop) {
             current = section.getAttribute("id");
@@ -19,7 +19,10 @@ window.addEventListener("scroll", () => {
             link.classList.add("active");
         }
     });
-});const elements = document.querySelectorAll(".fade-up");
+});
+
+// Animación de aparición suave (Fade Up)
+const elements = document.querySelectorAll(".fade-up");
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {

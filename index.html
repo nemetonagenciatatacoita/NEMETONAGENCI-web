@@ -1,325 +1,443 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEMETON TU AGENCIA SAS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<head> <link rel="icon" type="image/jpeg" href="img/logo.jpeg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Desierto de la Tatacoita - Desierto de Checua | Nemeton Tu Agencia</title>
+  <meta name="description" content="Descubre el Desierto de la Tatacoita y Desierto de Checua en Nemocón con Nemeton SAS. Paquetes con transporte, caminata guiada, Mina de Sal y almuerzo típico.">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Reglas fijas para evitar desbordamientos */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .logo-menu {
+      width: 45px !important;
+      height: 45px !important;
+      border-radius: 50% !important;
+      object-fit: cover !important;
+    }
+    .hero-seccion {
+      min-height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/tatacoa.jpg') center/cover no-repeat;
+      background-color: #1b4332;
+      color: white;
+      padding-top: 130px;
+      padding-bottom: 60px;
+    }
+  </style>
 </head>
 
 <body>
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="img/logo.jpeg" alt="Logo NEMETON" class="logo-menu">
-                <div class="ms-2">
-                    <h5 class="mb-0">NEMETON</h5>
-                    <small>TU AGENCIA S.A.S.</small>
-                </div>
-            </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#destinos">Destinos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experiencias">Experiencias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#mapa">Mapa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
+  <!-- MENÚ NAVEGACIÓN -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/logo.jpeg" alt="Logo NEMETON" class="logo-menu">
+        <div class="ms-2 text-start">
+          <h5 class="mb-0 text-white fw-bold" style="font-size: 1.1rem;">NEMETON</h5>
+          <small style="color: #9fd37c; font-size: 0.75rem;">TU AGENCIA S.A.S.</small>
         </div>
-    </nav>
+      </a>
 
-    <!-- HERO SECTION -->
-    <div class="hero">
-        <h1>NEMETON TU AGENCIA S.A.S.</h1>
-        <h3>Vive experiencias inolvidables en el Desierto de la Tatacoita</h3>
-        <p>Descubre la magia de Nemocón a través de recorridos únicos, astroturismo, glamping, senderismo y mucho más.</p>
-        <p>Conecta con la naturaleza y crea recuerdos inolvidables.</p>
-        <a href="https://wa.me/573115664376" class="btn btn-success btn-lg px-4 py-3">
-            Reservar por WhatsApp
-        </a> 
-        <p class="mt-4 slogan">✨ Tu próxima aventura comienza aquí.</p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinos">Destinos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencias">Experiencias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mapa">Mapa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- INICIO / HERO -->
+  <header class="hero-seccion text-center d-flex align-items-center justify-content-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold text-white mb-3">NEMETON TU AGENCIA S.A.S.</h1>
+      <h3 class="h3 mb-3" style="color: #52b788;">Vive experiencias inolvidables en el Desierto de la Tatacoita</h3>
+      <p class="lead text-light mx-auto" style="max-width: 700px;">
+        Descubre la magia de Nemocón a través de recorridos únicos, astroturismo, glamping, senderismo y mucho más.
+      </p>
+      <p class="text-light">Conecta con la naturaleza y crea recuerdos inolvidables.</p>
+      <a href="https://wa.me/573115664376" class="btn btn-success btn-lg px-4 py-3 mt-3 fw-bold" target="_blank">
+        📲 Reservar por WhatsApp
+      </a> 
+      <p class="mt-4 fs-5" style="color: #FFD66B; font-style: italic;">✨ Tu próxima aventura comienza aquí.</p>
+    </div>
+  </header>
+
+  <!-- DESTINOS -->
+  <section id="destinos" class="container py-5 fade-up">
+    <h2 class="text-center mb-5 fw-bold">Destinos destacados</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <img src="img/tatacoa.jpg" class="card-img-top" alt="Desierto" style="height: 250px; object-fit: cover;">
+          <div class="card-body text-center">
+            <h4>Desierto de la Tatacoita</h4>
+            <p class="text-muted">Paisajes únicos, senderismo y conexión con la naturaleza.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <img src="img/glamping.jpg" class="card-img-top" alt="Glamping" style="height: 250px; object-fit: cover;">
+          <div class="card-body text-center">
+            <h4>Glamping</h4>
+            <p class="text-muted">Descansa bajo las estrellas en un ambiente único.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <img src="img/senderismo.jpg" class="card-img-top" alt="Senderismo" style="height: 250px; object-fit: cover;">
+          <div class="card-body text-center">
+            <h4>Senderismo</h4>
+            <p class="text-muted">Recorridos guiados por paisajes espectaculares.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" class="container mt-4 fade-up">
+    <h2 class="text-center mb-4 fw-bold">Galería de experiencias</h2>
+    <div class="row g-3 galeria">
+      <div class="col-6 col-md-4"><img src="img/galeria1.jpeg" class="img-fluid rounded shadow" style="height:220px; width:100%; object-fit:cover;" alt="Galería 1"></div>
+      <div class="col-6 col-md-4"><img src="img/galeria2.jpeg" class="img-fluid rounded shadow" style="height:220px; width:100%; object-fit:cover;" alt="Galería 2"></div>
+      <div class="col-6 col-md-4"><img src="img/galeria3.jpeg" class="img-fluid rounded shadow" style="height:220px; width:100%; object-fit:cover;" alt="Galería 3"></div>
+      <div class="col-6 col-md-4"><img src="img/galeria4.jpeg" class="img-fluid rounded shadow" style="height:220px; width:100%; object-fit:cover;" alt="Galería 4"></div>
+      <div class="col-6 col-md-4"><img src="img/galeria5.jpeg" class="img-fluid rounded shadow" style="height:220px; width:100%; object-fit:cover;" alt="Galería 5"></div>
+      <div class="col-6 col-md-4"><img src="img/galeria6.jpeg" class="img-fluid rounded shadow" style="height:220px; width:100%; object-fit:cover;" alt="Galería 6"></div>
+      <div class="col-6 col-md-4"><img src="img/galeria7.jpeg" class="img-fluid rounded shadow" style="height:220px; width:100%; object-fit:cover;" alt="Galería 7"></div>
+      <div class="col-6 col-md-4"><img src="img/galeria8.jpeg" class="img-fluid rounded shadow" style="height:220px; width:100%; object-fit:cover;" alt="Galería 8"></div>
+      <div class="col-6 col-md-4"><img src="img/galeria9.jpeg" class="img-fluid rounded shadow" style="height:220px; width:100%; object-fit:cover;" alt="Galería 9"></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIAS -->
+  <section id="experiencias" class="container py-5 fade-up">
+    <h2 class="text-center mb-5 fw-bold text-success">Nuestras Experiencias</h2>
+
+    <!-- PASADÍA ESTRELLA -->
+    <div id="pasadia-estrella" class="tarjeta-plan destacado mb-5 w-100 p-0 overflow-hidden shadow">
+      <div class="row g-0 align-items-center">
+        <!-- Imagen del Pasadía -->
+        <div class="col-lg-6">
+          <img src="img/pasadia.jpeg" class="img-fluid w-100" style="height: 100%; min-height: 350px; object-fit: cover;" alt="RUTA SALADA">
+        </div>
+        <!-- Contenido del Pasadía -->
+        <div class="col-lg-6 p-4">
+          
+          <h3 class="fw-bold">RUTA SALADA CON NEMETON</h3>
+          <p class="text-muted">Vive la experiencia completa en Nemocón y Checua en un solo día.</p>
+          <ul class="my-3 ps-3">
+            <li>🚌 <strong>Transporte ida y vuelta:</strong> Cómodo y seguro desde el punto de encuentro.</li>
+            <li>🌵 <strong>Caminata en el Desierto de la Tatacoita / Checua:</strong> Guianza ecoturística especializada.</li>
+            <li>⛏️ <strong>Entrada a la Mina de Sal de Nemocón:</strong> Recorrido cultural por los espejos de sal y Museo.</li>
+            <li>🍽️ <strong>Almuerzo Típico:</strong> Gastronomía tradicional de la región incluida.</li>
+          </ul>
+          <a href="https://wa.me/573115664376?text=Hola%20Nemeton,%20quiero%20reservar%20el%20Tour%20Desierto%20+%20Mina" class="btn btn-success btn-lg mt-3 fw-bold w-100 d-block text-center" target="_blank">
+  📲 Reservar Pasadía por WhatsApp
+</a>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <!-- DESTINOS -->
-    <section id="destinos" class="container py-5 fade-up">
-        <h2 class="text-center mb-5">Destinos destacados</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card shadow h-100">
-                    <img src="img/tatacoa.jpg" class="card-img-top" alt="Desierto de la Tatacoita">
-                    <div class="card-body text-center">
-                        <h4>Desierto de la Tatacoita</h4>
-                        <p>Paisajes únicos, senderismo y conexión con la naturaleza.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow h-100">
-                    <img src="img/glamping.jpg" class="card-img-top" alt="Glamping">
-                    <div class="card-body text-center">
-                        <h4>Glamping</h4>
-                        <p>Descansa bajo las estrellas en un ambiente único.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow h-100">
-                    <img src="img/senderismo.jpg" class="card-img-top" alt="Senderismo">
-                    <div class="card-body text-center">
-                        <h4>Senderismo</h4>
-                        <p>Recorridos guiados por paisajes espectaculares.</p>
-                    </div>
-                </div>
-            </div>
+    <!-- ASTROTURISMO -->
+    <div class="row align-items-center my-5">
+      <div class="col-lg-6 order-lg-1 order-2">
+        <span class="badge-noche mb-2 d-inline-block">EXPERIENCIA NOCTURNA</span>
+        <h2>🔭 Astroturismo</h2>
+        <h4 class="my-2">
+          <del class="text-secondary fs-6">$95.000</del>
+          <span class="text-success fw-bold">$85.000 COP</span>
+        </h4>
+        <p class="mt-3">Cuando cae la noche, el Desierto de la Tatacoita revela uno de sus mayores espectáculos...</p>
+        <h5 class="fw-bold">Incluye:</h5>
+        <ul>
+          <li>✔ Recorrido por el desierto.</li>
+          <li>✔ Observación con telescopio.</li>
+          <li>✔ Bebida caliente.</li>
+          <li>✔ Refrigerio premium.</li>
+          <li>✔ Charla astronómica y cultura muisca.</li>
+          <li>✔ Fotografía grupal.</li>
+        </ul>
+        <div class="alert alert-warning py-2 mt-3">📅 Esta experiencia se realiza únicamente en fechas programadas.</div>
+        <a href="https://wa.me/573115664376"text=Hola%20Nemeton,%20quiero%20reservar%20el%20Tour%20+%20Astroturismo" class="btn btn-success btn-lg mt-2" target="_blank">Reservar por WhatsApp</a>
+      </div>
+      <div class="col-lg-6 order-lg-2 order-1 mb-3 mb-lg-0">
+        <img src="img/astroturismo.jpeg" class="img-fluid experiencia-img" alt="Astroturismo">
+      </div>
+    </div>
+
+    <!-- PLAN BÁSICO -->
+    <div class="row align-items-center my-5">
+      <div class="col-lg-6 mb-3 mb-lg-0">
+        <img src="img/planbasico.jpeg" class="img-fluid experiencia-img" alt="Tour Básico">
+      </div>
+      <div class="col-lg-6">
+        <span class="badge bg-success mb-2">PLAN BÁSICO</span>
+        <h2>🌵 Tour por el Desierto de la Tatacoita</h2>
+        <h4 class="my-2">
+          <del class="text-secondary fs-6">$39.000</del>
+          <span class="text-success fw-bold">$33.000 COP</span>
+        </h4>
+        <p class="mt-3">Disfruta de un recorrido guiado por el Desierto de la Tatacoita.</p>
+        <h5 class="fw-bold">Incluye:</h5>
+        <ul>
+          <li>✔ Tarjeta de asistencia médica.</li>
+          <li>✔ Guianza local experta.</li>
+          <li>✔ Agua y snack.</li>
+        </ul>
+        <a href="https://wa.me/573115664376" class="btn btn-success btn-lg mt-2" target="_blank">Reservar por WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- GLAMPING -->
+    <div class="row align-items-center my-5">
+      <div class="col-lg-6 order-lg-1 order-2">
+        <span class="badge bg-success mb-2">HOSPEDAJE</span>
+        <h2>🏕️ Glamping y Cabañas</h2>
+        <h4><span class="text-success fw-bold">Desde $195.000 COP</span></h4>
+        <p class="mt-3">Vive una experiencia única en un entorno natural...</p>
+        <a href="https://wa.me/573115664376" class="btn btn-success btn-lg mt-2" target="_blank">Reservar por WhatsApp</a>
+      </div>
+      <div class="col-lg-6 order-lg-2 order-1 mb-3 mb-lg-0">
+        <img src="img/planglamping.jpeg" class="img-fluid experiencia-img" alt="Glamping y Cabañas">
+      </div>
+    </div>
+
+    <!-- TOUR MINA DE SAL -->
+    <div class="row align-items-center my-5">
+      <div class="col-lg-6 mb-3 mb-lg-0">
+        <img src="img/minadesal.jpeg" class="img-fluid experiencia-img" alt="Mina de Sal">
+      </div>
+      <div class="col-lg-6">
+        <span class="badge bg-dark mb-2">EXPERIENCIA CULTURAL</span>
+        <h2>⛏️ Tour Mina de Sal</h2>
+        <h4><span class="text-success fw-bold">COP $46.000 - $56.000</span></h4>
+        <p class="mt-3">80 metros bajo tierra 🌍 una experiencia que combina asombro y belleza.</p>
+        <a href="https://wa.me/573115664376" class="btn btn-success btn-lg mt-2" target="_blank">Reservar por WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- ALOJAMIENTO RURAL -->
+    <div class="row align-items-center my-5">
+      <div class="col-lg-6 order-lg-1 order-2">
+        <span class="badge bg-success mb-2">ECO HOTEL</span>
+        <h2>🏨 Alojamiento Rural</h2>
+        <h4 class="my-2">
+          <del class="text-secondary fs-6">COP $150.000</del>
+          <span class="text-success fw-bold">COP $99.000</span>
+        </h4>
+        <p class="mt-3">Savieza es un eco hotel rural dedicado a la preservación del medio ambiente.</p>
+        <a href="https://wa.me/573115664376" class="btn btn-success btn-lg mt-2" target="_blank">Reservar por WhatsApp</a>
+      </div>
+      <div class="col-lg-6 order-lg-2 order-1 mb-3 mb-lg-0">
+        <img src="img/cabana.jpeg" class="img-fluid experiencia-img" alt="Alojamiento Rural">
+      </div>
+    </div>
+
+    <!-- PAINTBALL -->
+    <div class="row align-items-center my-5">
+      <div class="col-lg-6 mb-3 mb-lg-0">
+        <img src="img/paintball.jpeg" class="img-fluid experiencia-img" alt="Paintball Nemocón">
+      </div>
+      <div class="col-lg-6">
+        <span class="badge bg-danger mb-2">ADRENALINA</span>
+        <h2>🔫 Paintball Nemocón</h2>
+        <h4><span class="text-success fw-bold">COP $20.000 - $50.000</span></h4>
+        <p class="mt-3">¡Vive la adrenalina! Paintball en Checua, a solo 15 minutos de Nemocón.</p>
+        <a href="https://wa.me/573115664376" class="btn btn-success btn-lg mt-2" target="_blank">Reservar por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ ELEGIR -->
+  <section id="por-que-elegir" class="container py-5 fade-up">
+    <h2 class="text-center mb-5 fw-bold">⭐ ¿Por qué elegir NEMETON?</h2>
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="card shadow border-0 h-100 text-center p-3">
+          <div class="fs-1">🌿</div>
+          <h5 class="fw-bold mt-2">Experiencia auténtica</h5>
+          <p class="small text-muted mb-0">Recorridos reales en naturaleza.</p>
         </div>
-    </section>
-
-    <!-- GALERÍA -->
-    <section id="galeria" class="container mt-5 fade-up">
-        <h2 class="text-center mb-4">Galería de experiencias</h2>
-        <div class="row g-4">
-            <div class="col-md-4"><img src="img/galeria1.jpeg" class="img-fluid rounded shadow" alt="Galería 1"></div>
-            <div class="col-md-4"><img src="img/galeria2.jpeg" class="img-fluid rounded shadow" alt="Galería 2"></div>
-            <div class="col-md-4"><img src="img/galeria3.jpeg" class="img-fluid rounded shadow" alt="Galería 3"></div>
-            <div class="col-md-4"><img src="img/galeria4.jpeg" class="img-fluid rounded shadow" alt="Galería 4"></div>
-            <div class="col-md-4"><img src="img/galeria5.jpeg" class="img-fluid rounded shadow" alt="Galería 5"></div>
-            <div class="col-md-4"><img src="img/galeria6.jpeg" class="img-fluid rounded shadow" alt="Galería 6"></div>
-            <div class="col-md-4"><img src="img/galeria7.jpeg" class="img-fluid rounded shadow" alt="Galería 7"></div>
-            <div class="col-md-4"><img src="img/galeria8.jpeg" class="img-fluid rounded shadow" alt="Galería 8"></div>
-            <div class="col-md-4"><img src="img/galeria9.jpeg" class="img-fluid rounded shadow" alt="Galería 9"></div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card shadow border-0 h-100 text-center p-3">
+          <div class="fs-1">🧭</div>
+          <h5 class="fw-bold mt-2">Guías expertos</h5>
+          <p class="small text-muted mb-0">Personal local capacitado.</p>
         </div>
-    </section>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card shadow border-0 h-100 text-center p-3">
+          <div class="fs-1">📸</div>
+          <h5 class="fw-bold mt-2">Fotos increíbles</h5>
+          <p class="small text-muted mb-0">Los mejores paisajes.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card shadow border-0 h-100 text-center p-3">
+          <div class="fs-1">🛡️</div>
+          <h5 class="fw-bold mt-2">Seguridad</h5>
+          <p class="small text-muted mb-0">Asistencia médica incluida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- EXPERIENCIAS -->
-    <section id="experiencias" class="container py-5 fade-up">
-        <h2 class="text-center mb-5">Nuestras Experiencias</h2>
-
-        <!-- ASTROTURISMO -->
-        <div class="row align-items-center my-5">
-            <div class="col-lg-6 order-lg-1 order-2">
-                <span class="badge bg-dark mb-3">EXPERIENCIA NOCTURNA</span>
-                <h2>🔭 Astroturismo</h2>
-                <h4>
-                    <del class="text-secondary">$89.000</del>
-                    <span class="text-success fw-bold">$75.000 COP</span>
-                </h4>
-                <p class="mt-3">Cuando cae la noche, el Desierto de la Tatacoita revela uno de sus mayores espectáculos...</p>
-                <h5>Incluye</h5>
-                <ul>
-                    <li>✔ Recorrido por el desierto.</li>
-                    <li>✔ Observación con telescopio.</li>
-                    <li>✔ Bebida caliente.</li>
-                    <li>✔ Refrigerio premium.</li>
-                    <li>✔ Charla astronómica y cultura muisca.</li>
-                    <li>✔ Fotografía grupal.</li>
-                </ul>
-                <div class="alert alert-warning mt-3">📅 Esta experiencia se realiza únicamente en fechas programadas.</div>
-                <a href="https://wa.me/573115664376" class="btn btn-success btn-lg mt-3">Reservar por WhatsApp</a>
+<!-- TESTIMONIOS CON FOTOS REALES -->
+  <section id="testimonios" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-2">Lo que dicen nuestros viajeros 🌟</h2>
+      <p class="text-muted mb-5">Experiencias reales vividas en el Desierto de la Tatacoita, Mina de Sal y Glamping con Nemeton.</p>
+      
+      <div class="row g-4">
+        <!-- TESTIMONIO 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
+            <div class="mb-3">
+              <img src="img/testimonio1.jpeg" class="rounded-circle shadow" style="width: 90px; height: 90px; object-fit: cover; border: 3px solid #52b788;" alt="Cliente Nemeton">
             </div>
-            <div class="col-lg-6 order-lg-2 order-1">
-                <img src="img/astroturismo.jpeg" class="img-fluid experiencia-img" alt="Astroturismo">
-            </div>
+            <div class="text-warning mb-2">⭐⭐⭐⭐⭐</div>
+            <p class="card-text text-muted fst-italic">"¡Una experiencia única! El desierto es mágico y Nemeton se encargó de toda la guianza y seguridad. Súper recomendados."</p>
+            <h6 class="fw-bold mb-0 mt-3">— Laura G.</h6>
+            <small class="text-muted">Caminata Tatacoita</small>
+          </div>
         </div>
 
-        <!-- PLAN BÁSICO -->
-        <div class="row align-items-center my-5">
-            <div class="col-lg-6">
-                <img src="img/planbasico.jpeg" class="img-fluid experiencia-img" alt="Tour Básico">
+        <!-- TESTIMONIO 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
+            <div class="mb-3">
+              <img src="img/testimonio2.jpeg" class="rounded-circle shadow" style="width: 90px; height: 90px; object-fit: cover; border: 3px solid #52b788;" alt="Cliente Nemeton">
             </div>
-            <div class="col-lg-6">
-                <span class="badge bg-success mb-3">PLAN BÁSICO</span>
-                <h2>🌵 Tour por el Desierto de la Tatacoita</h2>
-                <h4>
-                    <del class="text-secondary">$39.000</del>
-                    <span class="text-success fw-bold">$33.000 COP</span>
-                </h4>
-                <p class="mt-3">Disfruta de un recorrido guiado por el Desierto de la Tatacoita.</p>
-                <h5>Incluye</h5>
-                <ul>
-                    <li>✔ Tarjeta de asistencia médica.</li>
-                    <li>✔ Guianza local experta.</li>
-                    <li>✔ Agua y snack.</li>
-                </ul>
-                <a href="https://wa.me/573115664376" class="btn btn-success btn-lg mt-3">Reservar por WhatsApp</a>
-            </div>
+            <div class="text-warning mb-2">⭐⭐⭐⭐⭐</div>
+            <p class="card-text text-muted fst-italic">"El Pasadía RUTA SALADA fue lo mejor. La Mina de Sal es asombrosa y el almuerzo regional riquísimo. Todo muy bien organizado."</p>
+            <h6 class="fw-bold mb-0 mt-3">— Andrés M.</h6>
+            <small class="text-muted">Pasadía Estrella</small>
+          </div>
         </div>
 
-        <!-- GLAMPING -->
-        <div class="row align-items-center my-5">
-            <div class="col-lg-6">
-                <img src="img/planglamping.jpeg" class="img-fluid experiencia-img" alt="Glamping y Cabañas">
+        <!-- TESTIMONIO 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
+            <div class="mb-3">
+              <img src="img/testimonio3.jpeg" class="rounded-circle shadow" style="width: 90px; height: 90px; object-fit: cover; border: 3px solid #52b788;" alt="Cliente Nemeton">
             </div>
-            <div class="col-lg-6">
-                <span class="badge bg-success mb-3">HOSPEDAJE</span>
-                <h2>🏕️ Glamping y Cabañas</h2>
-                <h4><span class="text-success fw-bold">Desde $195.000 COP</span></h4>
-                <p class="mt-3">Vive una experiencia única en un entorno natural...</p>
-                <a href="https://wa.me/573115664376" class="btn btn-success btn-lg mt-3">Reservar por WhatsApp</a>
-            </div>
+            <div class="text-warning mb-2">⭐⭐⭐⭐⭐</div>
+            <p class="card-text text-muted fst-italic">"El Glamping y el Astroturismo bajo las estrellas fueron el plan perfecto. Una atención impecable de todo el equipo."</p>
+            <h6 class="fw-bold mb-0 mt-3">— Carolina P.</h6>
+            <small class="text-muted">Glamping & Astroturismo</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- REDES SOCIALES -->
+  <section id="comunidad" class="container py-4 text-center fade-up bg-light rounded-3 my-5">
+    <h3 class="fw-bold">Síguenos en Redes Sociales</h3>
+    <p class="text-muted">Mira fotos y videos reales de nuestros recorridos en el Desierto de la Tatacoita.</p>
+    <div class="d-flex justify-content-center gap-3 mt-3">
+      <a href="https://instagram.com/nemetontuagencia" target="_blank" class="btn btn-outline-dark fw-bold">📸 Instagram Oficial</a>
+      <a href="https://tiktok.com/@desierto_delatatacoita" target="_blank" class="btn btn-outline-dark fw-bold">🎵 TikTok</a>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section id="mapa" class="container py-5 fade-up">
+    <h2 class="text-center mb-4 fw-bold">📍 ¿Dónde estamos?</h2>
+    <div class="rounded-3 overflow-hidden shadow">
+      <iframe src="https://www.google.com/maps?q=Checua%20Nemocón%20Cundinamarca&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="container py-5 fade-up">
+    <div class="card shadow border-0 text-center p-4">
+      <div class="card-body">
+        <h2 class="fw-bold text-success mb-3">📞 Contáctanos</h2>
+        <p class="text-muted">Estamos listos para programar tu próxima aventura.</p>
+        <a href="https://wa.me/573115664376" class="btn btn-success btn-lg my-3 px-4 fw-bold" target="_blank">Escribir a WhatsApp</a>
+        <p class="mb-1">📧 desiertodelatatacoitachecua@gmail.com</p>
+        <p class="mb-0">📍 Checua, Nemocón - Cundinamarca</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="container py-5">
+    ...
+  </section>
+
+  <!-- FOOTER CON TATACOITA Y CHECUA DESTACADOS -->
+  <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row g-4 text-start align-items-center">
+        
+        <!-- INFORMACIÓN LEGAL Y EMPRESA -->
+        <div class="col-md-4">
+          <h5 class="text-success fw-bold">NEMETON TU AGENCIA S.A.S.</h5>
+          <p class="small text-muted mb-2">
+            Especialistas en el <strong class="text-white">Desierto Tatacoita / Desierto Checua</strong> y Turismo en Nemocón, Cundinamarca.
+          </p>
+          <p class="small mb-1"><strong>RNT No:</strong> [254547]</p>
+          <p class="small mb-0"><strong>NIT:</strong> [1075680567]</p>
         </div>
 
-        <!-- TOUR MINA DE SAL -->
-        <div class="row align-items-center my-5">
-            <div class="col-lg-6 order-lg-1 order-2">
-                <span class="badge bg-dark mb-3">EXPERIENCIA CULTURAL</span>
-                <h2>⛏️ Tour Mina de Sal</h2>
-                <h4><span class="text-success fw-bold">COP $46.000 - $56.000</span></h4>
-                <p class="mt-3">80 metros bajo tierra 🌍 una experiencia que combina asombro y belleza.</p>
-                <a href="https://wa.me/573115664376" class="btn btn-success btn-lg mt-3">Reservar por WhatsApp</a>
-            </div>
-            <div class="col-lg-6 order-lg-2 order-1">
-                <img src="img/minadesal.jpeg" class="img-fluid experiencia-img" alt="Mina de Sal">
-            </div>
+        <!-- ENLACES RÁPIDOS CON LOGO -->
+        <div class="col-md-4">
+          <h5 class="text-white fw-bold mb-3">Enlaces Rápidos</h5>
+          <div class="d-flex align-items-center gap-3">
+            <img src="img/logo.jpeg" alt="Nemeton Logo" class="rounded-circle shadow" style="width: 70px; height: 70px; object-fit: cover; border: 2px solid #52b788;">
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-1"><a href="#destinos" class="text-white-50 text-decoration-none">➔ Destinos</a></li>
+              <li class="mb-1"><a href="#experiencias" class="text-white-50 text-decoration-none">➔ Planes y Precios</a></li>
+              <li class="mb-1"><a href="#galeria" class="text-white-50 text-decoration-none">➔ Galería de Fotos</a></li>
+              <li class="mb-1"><a href="#contacto" class="text-white-50 text-decoration-none">➔ Contacto</a></li>
+            </ul>
+          </div>
         </div>
 
-        <!-- ALOJAMIENTO RURAL -->
-        <div class="row align-items-center my-5">
-            <div class="col-lg-6">
-                <img src="img/cabana.jpeg" class="img-fluid experiencia-img" alt="Alojamiento Rural">
-            </div>
-            <div class="col-lg-6">
-                <span class="badge bg-success mb-3">ECO HOTEL</span>
-                <h2>🏨 Alojamiento Rural</h2>
-                <h4>
-                    <del class="text-secondary">COP $150.000</del>
-                    <span class="text-success fw-bold">COP $99.000</span>
-                </h4>
-                <p class="mt-3">Savieza es un eco hotel rural dedicado a la preservación del medio ambiente.</p>
-                <a href="https://wa.me/573115664376" class="btn btn-success btn-lg mt-3">Reservar por WhatsApp</a>
-            </div>
+        <!-- MEDIOS DE PAGO -->
+        <div class="col-md-4">
+          <h5 class="text-white fw-bold">Medios de Pago</h5>
+          <p class="small text-muted mb-2">Aceptamos transferencias y pagos en efectivo:</p>
+          <div class="d-flex gap-2 fs-6 fw-bold">
+            <span class="badge bg-secondary">Nequi</span>
+            <span class="badge bg-secondary">Daviplata</span>
+            <span class="badge bg-secondary">Bancolombia</span>
+          </div>
         </div>
 
-        <!-- PAINTBALL -->
-        <div class="row align-items-center my-5">
-            <div class="col-lg-6 order-lg-1 order-2">
-                <span class="badge bg-danger mb-3">ADRENALINA</span>
-                <h2>🔫 Paintball Nemocón</h2>
-                <h4><span class="text-success fw-bold">COP $20.000 - $50.000</span></h4>
-                <p class="mt-3">¡Vive la adrenalina! Paintball en Checua, a solo 15 minutos de Nemocón.</p>
-                <a href="https://wa.me/573115664376" class="btn btn-success btn-lg mt-3">Reservar por WhatsApp</a>
-            </div>
-            <div class="col-lg-6 order-lg-2 order-1">
-                <img src="img/paintball.jpeg" class="img-fluid experiencia-img" alt="Paintball Nemocón">
-            </div>
+      </div>
+
+<hr class="my-4 border-secondary">
+
+      <!-- LÍNEA DE COPYRIGHT (VISIBILIDAD MEJORADA) -->
+      <div class="row">
+        <div class="col-12 text-center pb-3">
+          <p class="mb-0 text-light fw-semibold small">
+            © 2026 Nemeton Tu Agencia S.A.S. Todos los derechos reservados. | Diseñado para Turismo Sostenible.
+          </p>
         </div>
-
-        <!-- TOUR DESIERTO + MIRADOR -->
-        <div class="row align-items-center my-5">
-            <div class="col-lg-6">
-                <span class="badge bg-warning text-dark mb-3">PLAN ESTÁNDAR</span>
-                <h2>🌵 Tour Desierto + Mirador</h2>
-                <h4>
-                    <del class="text-secondary">COP $45.000</del>
-                    <span class="text-success fw-bold">COP $38.000</span>
-                </h4>
-                <p class="mt-3">Disfruta de un recorrido guiado por el Desierto de la Tatacoita.</p>
-                <a href="https://wa.me/573115664376" class="btn btn-success btn-lg mt-3">Reservar por WhatsApp</a>
-            </div>
-            <div class="col-lg-6">
-                <img src="img/tatacoa.jpg" class="img-fluid experiencia-img" alt="Desierto y Mirador">
-            </div>
-        </div>
-    </section>
-
-    <!-- POR QUÉ ELEGIR -->
-    <section id="por-que-elegir" class="container py-5">
-        <h2 class="text-center mb-5">⭐ ¿Por qué elegir NEMETON?</h2>
-        <div class="row g-4">
-            <div class="col-md-3">
-                <div class="card shadow h-100 text-center p-4">
-                    <h1>🌿</h1>
-                    <h5>Experiencia auténtica</h5>
-                    <p>Vive recorridos reales conectando con la naturaleza.</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow h-100 text-center p-4">
-                    <h1>🧭</h1>
-                    <h5>Guías expertos</h5>
-                    <p>Personal local con amplia experiencia.</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow h-100 text-center p-4">
-                    <h1>📸</h1>
-                    <h5>Fotos increíbles</h5>
-                    <p>Los mejores paisajes para tus recuerdos.</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow h-100 text-center p-4">
-                    <h1>🛡️</h1>
-                    <h5>Seguridad</h5>
-                    <p>Asistencia durante todo el recorrido.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TESTIMONIOS -->
-    <section id="testimonios" class="container py-5 fade-up">
-        <h2 class="text-center mb-5">💬 Testimonios</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card shadow h-100">
-                    <div class="card-body">
-                        <p>"Una experiencia increíble..."</p>
-                        <h6 class="text-success">★★★★★</h6>
-                        <strong>Laura G.</strong>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow h-100">
-                    <div class="card-body">
-                        <p>"Muy organizado y seguro..."</p>
-                        <h6 class="text-success">★★★★★</h6>
-                        <strong>Andrés M.</strong>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow h-100">
-                    <div class="card-body">
-                        <p>"Repetiría mil veces."</p>
-                        <h6 class="text-success">★★★★★</h6>
-                        <strong>Carolina P.</strong>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- MAPA -->
-    <section id="mapa" class="container py-5 fade-up">
-        <h2 class="text-center mb-4">📍 ¿Dónde estamos?</h2>
-        <iframe src="https://www.google.com/maps?q=Checua%20Nemocón%20Cundinamarca&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="container py-5 fade-up">
-        <div class="card shadow">
-            <div class="card-body text-center">
-                <h2>📞 Contáctanos</h2>
-                <p>Estamos listos para ayudarte.</p>
-                <a href="https://wa.me/573115664376" class="btn btn-success btn-lg my-3">WhatsApp</a>
-                <p>📧 desiertodelatatacoitachecua@gmail.com</p>
-                <p>📍 Checua, Nemocón - Cundinamarca</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+      </div>

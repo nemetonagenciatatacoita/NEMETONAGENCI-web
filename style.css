@@ -1,201 +1,259 @@
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f5f5f5;
+/* AJUSTE DE LOGO DE MENÚ */
+.logo-menu {
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50% !important;
+    object-fit: cover !alignment;
 }
 
-/* HERO PRINCIPAL */
-.hero{
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding: 120px;20px 60px;
-    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("img/portada.jpg");
-    background-size:cover;
-    background-position:center;
-    color:white;
+/* NUEVA SECCIÓN HERO CON FONDO REFORZADO */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/tatacoa.jpg") center/cover no-repeat;
+    background-color: #1b4332 !important; /* Verde oscuro si no carga la foto */
+    color: #ffffff !important;
+    position: relative;
 }
 
-.logo{
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    margin-bottom:20px;
+.hero-content h1, 
+.hero-content h3, 
+.hero-content p {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}/* REGLA MAESTRA DE SEGURIDAD PARA IMÁGENES */
+img {
+    max-width: 100% !important;
+    height: auto;
 }
 
-h1{
-    font-size:52px;
-    font-weight:bold;
+html {
+    scroll-behavior: smooth;
 }
 
-h3{
-    margin-top:10px;
-    font-size:24px;
-    font-weight:500;
+section {
+    scroll-margin-top: 90px;
 }
 
-p{
-    max-width:650px;
-    font-size:18px;
-    opacity:0.9;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
 }
 
-/* BOTÓN WHATSAPP */
-.btn-success{
-    margin-top:15px;
-    padding:12px 25px;
-    font-size:18px;
-    border-radius:30px;
+/* MENÚ NAVEGACIÓN Y LOGO RÍGIDO */
+.navbar {
+    background: rgba(0, 0, 0, 0.85) !important;
+    backdrop-filter: blur(8px);
 }
 
-/* DESTINOS */
-.destinos{
-    padding:60px 20px;
-    text-align:center;
+.logo-menu {
+    width: 45px !important;
+    height: 45px !important;
+    max-width: 45px !important;
+    max-height: 45px !important;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.destinos h2{
-    font-size:36px;
-    margin-bottom:30px;
-    color:#222;
+.navbar-brand h5 {
+    color: white;
+    font-size: 22px;
+    margin: 0;
+    font-weight: 700;
 }
 
-.destinos img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:15px;
-    transition:transform .3s ease;
+.navbar-brand small {
+    color: #9fd37c;
+    letter-spacing: 1px;
+    font-size: 11px;
 }
 
-.destinos img:hover{
-    transform:scale(1.05);
+.nav-link {
+    color: white !important;
+    margin-left: 20px;
+    transition: .3s;
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
 }
 
-.destinos h4{
-    margin-top:10px;
-    font-size:18px;
-}.galeria img{
-    transition:0.4s;
-    cursor:pointer;
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #00ff88;
+    transition: .3s;
 }
 
-.galeria img:hover{
-    transform:scale(1.05);
-}.card{
-    border:none;
-    border-radius:15px;
-    transition:0.4s;
+.nav-link:hover {
+    color: #00ff88 !important;
 }
 
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 15px 30px rgba(0,0,0,.25);
-}/* ===== MENÚ ===== */
-
-.navbar{
-    background: rgba(0,0,0,.65);
-    backdrop-filter: blur(10px);
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
 }
 
-.navbar-brand{
-    font-size: 28px;
+.nav-link.active {
+    color: #00ff88 !important;
     font-weight: bold;
 }
 
-.nav-link{
-    color:white !important;
-    margin-left:20px;
-    transition:.3s;
+/* HERO PRINCIPAL */
+/* HERO PRINCIPAL */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 140px 20px 80px; /* Margen superior para que el menú no tape el texto */
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("img/tatacoa.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #1b4332; /* Fondo de respaldo visible y elegante */
+    color: #ffffff !important;
 }
 
-.nav-link:hover{
-    color:#f7c873 !important;
-}
-.slogan{
-    font-size:22px;
-    font-style:italic;
-    color:#FFD66B;
-    margin-top:30px;
-}.navbar-brand img{
-    border-radius:50%;
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    margin-bottom: 15px;
 }
 
-.navbar-brand small{
-    color:#9dd17b;
-    font-size:12px;
-    letter-spacing:1px;
-}/* ===== LOGO DEL MENÚ ===== */
-
-.logo-menu{
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    object-fit:cover;
+.hero h3 {
+    font-size: 1.5rem;
+    color: #52b788 !important;
+    margin-bottom: 15px;
 }
 
-.navbar-brand h5{
-    color:white;
-    font-size:22px;
-    margin:0;
-    font-weight:700;
+.hero p {
+    font-size: 1.1rem;
+    color: #f8f9fa !important;
+    max-width: 700px;
+}
 }
 
-.navbar-brand small{
-    color:#9fd37c;
-    letter-spacing:1px;
-    font-size:11px;
-}.nav-link{
-    position:relative;
+.slogan {
+    font-size: 22px;
+    font-style: italic;
+    color: #FFD66B;
+    margin-top: 30px;
 }
 
-.nav-link::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-4px;
-    width:0;
-    height:2px;
-    background:#9fd37c;
-    transition:.3s;
+.btn-success {
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 30px;
 }
 
-.nav-link:hover::after{
-    width:100%;
-}/* ===== EXPERIENCIAS ===== */
-
-#experiencias{
-    padding-top:80px;
+/* DESTINOS Y GALERÍA */
+.destinos img, .galeria img {
+    transition: transform .3s ease;
+    cursor: pointer;
 }
 
-#experiencias h2{
-    font-weight:700;
+.destinos img:hover, .galeria img:hover {
+    transform: scale(1.05);
 }
 
-.experiencia-img{
-    width:100%;
-    height:420px;
-    object-fit:cover;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.2);
-    transition:.4s;
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.4s;
 }
 
-.experiencia-img:hover{
-    transform:scale(1.03);
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.25);
 }
 
-#experiencias ul{
-    padding-left:20px;
+/* EXPERIENCIAS */
+#experiencias {
+    padding-top: 80px;
 }
 
-#experiencias li{
-    margin-bottom:8px;
-}.whatsapp-float {
+#experiencias h2 {
+    font-weight: 700;
+}
+
+.experiencia-img {
+    width: 100%;
+    height: 380px;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    transition: .4s;
+}
+
+.experiencia-img:hover {
+    transform: scale(1.03);
+}
+
+/* TARJETAS DE PLANES */
+.tarjeta-plan {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 30px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.tarjeta-plan.destacado {
+    border: 2px solid #e67e22;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #e67e22;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge-noche {
+    background: #2c3e50;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-plan {
+    display: block;
+    text-align: center;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-plan:hover {
+    background-color: #1eb954;
+    color: white;
+}
+
+/* BOTÓN FLOTANTE WHATSAPP */
+.whatsapp-float {
     position: fixed;
     width: 60px;
     height: 60px;
@@ -211,47 +269,11 @@ p{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-}html {
-    scroll-behavior: smooth;
-}section {
-    scroll-margin-top: 90px;
-}.nav-link {
-    cursor: pointer;
-    transition: 0.3s;
+    z-index: 1000;
 }
 
-.nav-link:hover {
-    color: #00ff88 !important;
-}html {
-    scroll-behavior: smooth;
-}
-
-/* evita que el navbar tape las secciones */
-section {
-    scroll-margin-top: 90px;
-}
-
-/* estilo del menú */
-.navbar {
-    background: rgba(0,0,0,0.85);
-    backdrop-filter: blur(8px);
-}
-
-/* hover bonito */
-.nav-link {
-    transition: 0.3s;
-    font-weight: 500;
-}
-
-.nav-link:hover {
-    color: #00ff88 !important;
-}
-
-/* link activo */
-.nav-link.active {
-    color: #00ff88 !important;
-    font-weight: bold;
-}.fade-up {
+/* ANIMACIONES FADE-UP */
+.fade-up {
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.6s ease;
@@ -260,4 +282,42 @@ section {
 .fade-up.show {
     opacity: 1;
     transform: translateY(0);
+}
+/* EFECTO DE MOVIMIENTO Y ANIMACIÓN EN DESTINOS */
+#destinos .card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden; /* Mantiene la imagen dentro de los bordes redondeados */
+}
+
+#destinos .card img {
+    transition: transform 0.5s ease;
+}
+
+/* Movimiento al pasar el cursor (Hover) */
+#destinos .card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta suavemente hacia arriba */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2) !important; /* Agrega una sombra elegante */
+}
+
+#destinos .card:hover img {
+    transform: scale(1.08); /* Hace un ligero zoom a la imagen */
+}
+/* ANIMACIÓN FORZADA PARA TARJETAS DE DESTINOS */
+#destinos .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+    cursor: pointer;
+}
+
+#destinos .card img {
+    transition: transform 0.4s ease-in-out !important;
+}
+
+/* EFECTO HOVER (MOVIMIENTO AL PASAR EL CURSOR) */
+#destinos .card:hover {
+    transform: translateY(-12px) !important;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25) !important;
+}
+
+#destinos .card:hover img {
+    transform: scale(1.06) !important;
 }
