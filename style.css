@@ -3,11 +3,11 @@
     width: 45px !important;
     height: 45px !important;
     border-radius: 50% !important;
-    object-fit: cover !alignment;
+    object-fit: cover !important;
 }
 
 /* NUEVA SECCIÓN HERO CON FONDO REFORZADO */
-.hero-section {
+hero-seccion {
     min-height: 100vh;
     padding-top: 120px;
     padding-bottom: 60px;
@@ -137,7 +137,7 @@ body {
     color: #f8f9fa !important;
     max-width: 700px;
 }
-}
+
 
 .slogan {
     font-size: 22px;
